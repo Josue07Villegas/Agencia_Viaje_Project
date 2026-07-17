@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario y datos de contacto de TravelGo.">
+  <title>Contacto | TravelGo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contacto">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html"><span class="logo-mark">TG</span><span>TravelGo</span></a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-menu">
+      <li><a data-page="inicio" href="index.html">Inicio</a></li>
+      <li><a data-page="destinos" href="destinos.html">Destinos</a></li>
+      <li><a data-page="promociones" href="ofertas.html">Promociones</a></li>
+      <li><a data-page="contacto" href="contactos.html">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1800&q=85')">
+    <div class="hero-content"><span class="eyebrow">Atención personalizada</span><h1>Estamos listos para ayudarte</h1><p>Cuéntanos tus planes y recibe la mejor asesoría para tu próxima aventura.</p><a class="btn" href="#contacto">Enviar mensaje</a></div>
+  </section>
+  <section class="section alt" id="contacto">
+    <div class="container">
+      <div class="section-heading"><h2>Contáctanos</h2><p>Completa el formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p></div>
+      <div class="contact-grid">
+        <section class="panel">
+          <h2>Formulario de contacto</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group"><label for="nombre">Nombre</label><input class="form-control" id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required></div>
+            <div class="form-group"><label for="correo">Correo electrónico</label><input class="form-control" id="correo" name="correo" type="email" placeholder="ejemplo@correo.com" required></div>
+            <div class="form-group"><label for="asunto">Asunto</label><input class="form-control" id="asunto" name="asunto" type="text" placeholder="Asunto del mensaje" required></div>
+            <div class="form-group"><label for="mensaje">Mensaje</label><textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea></div>
+            <button class="btn" type="submit" style="width:100%">Enviar mensaje</button>
+            <div class="notice" id="formNotice" role="status">Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.</div>
+          </form>
+        </section>
+        <aside class="panel">
+          <h2>Información adicional</h2>
+          <div class="info-list">
+            <div class="info-item"><div class="info-icon">✉</div><div><strong>Email</strong><br><a href="mailto:info@travelgo.com">info@travelgo.com</a></div></div>
+            <div class="info-item"><div class="info-icon">☎</div><div><strong>Teléfono</strong><br><a href="tel:+525512345678">+52 55 1234 5678</a></div></div>
+            <div class="info-item"><div class="info-icon">⌖</div><div><strong>Ubicación</strong><br>Monterrey, Nuevo León, México</div></div>
+            <div class="info-item"><div class="info-icon">★</div><div><strong>Síguenos</strong><br>Encuéntranos en nuestras redes sociales.</div></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><div class="logo" style="margin-bottom:14px"><span class="logo-mark">TG</span><span>TravelGo</span></div><p>Tu agencia de viajes confiable. Diseñamos experiencias memorables para cada tipo de viajero.</p></div>
+    <div><h4>Enlaces rápidos</h4><ul class="footer-links"><li><a href="index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="ofertas.html">Promociones</a></li><li><a href="contactos.html">Contacto</a></li></ul></div>
+    <div><h4>Síguenos</h4><div class="socials"><a href="#">f</a><a href="#">◎</a><a href="#">𝕏</a><a href="#">▶</a></div></div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 TravelGo. Proyecto académico - Sitio web de agencia de viajes.</div></div>
+</footer>
+<script src="app.js"></script>
+<script>
+const contactForm=document.getElementById('contactForm');
+const formNotice=document.getElementById('formNotice');
+contactForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  if(!contactForm.checkValidity()){contactForm.reportValidity();return;}
+  formNotice.style.display='block';
+  contactForm.reset();
+});
+</script>
+</body>
+</html>
