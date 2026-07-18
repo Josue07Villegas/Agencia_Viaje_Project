@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Promociones y paquetes turísticos de TravelGo.">
+  <title>Promociones | TravelGo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="promociones">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html"><span class="logo-mark">TG</span><span>TravelGo</span></a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-menu">
+      <li><a data-page="inicio" href="index.html">Inicio</a></li>
+      <li><a data-page="destinos" href="destinos.html">Destinos</a></li>
+      <li><a data-page="promociones" href="ofertas.html">Promociones</a></li>
+      <li><a data-page="contacto" href="contactos.html">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+<main>
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85')">
+    <div class="hero-content"><span class="eyebrow">Ahorra en tu siguiente viaje</span><h1>Ofertas exclusivas por tiempo limitado</h1><p>Hasta 40% de descuento en algunos de los destinos más soñados.</p><a class="btn" href="#ofertas">Ver ofertas</a></div>
+  </section>
+  <section class="section alt" id="ofertas">
+    <div class="container">
+      <div class="section-heading"><h2>Nuestras mejores ofertas</h2><p>Filtra por tipo de experiencia y encuentra el viaje ideal.</p></div>
+      <div class="filters" aria-label="Filtros de promociones">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="playa">Playa</button>
+        <button class="filter-btn" data-filter="ciudad">Ciudad</button>
+        <button class="filter-btn" data-filter="aventura">Aventura</button>
+        <button class="filter-btn" data-filter="cultura">Cultura</button>
+      </div>
+      <div class="grid-3">
+        <article class="card offer-item" data-category="playa"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1510097467424-192d713fd8b2?auto=format&fit=crop&w=1000&q=85" alt="Cancún, México"><span class="discount">-35%</span></div><div class="card-body"><h3>Cancún, México</h3><p>Playas de arena blanca, aguas turquesas y excelente vida nocturna.</p><p class="price"><span class="old-price">$1,850</span>$1,199</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+        <article class="card offer-item" data-category="ciudad cultura"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85" alt="París, Francia"><span class="discount">-25%</span></div><div class="card-body"><h3>París, Francia</h3><p>Arte, gastronomía y recorridos por los lugares más emblemáticos.</p><p class="price"><span class="old-price">$2,400</span>$1,799</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+        <article class="card offer-item" data-category="aventura cultura"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1000&q=85" alt="Machu Picchu, Perú"><span class="discount">-30%</span></div><div class="card-body"><h3>Machu Picchu, Perú</h3><p>Experiencia arqueológica y cultural única en los Andes.</p><p class="price"><span class="old-price">$2,100</span>$1,470</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+        <article class="card offer-item" data-category="ciudad cultura"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1000&q=85" alt="Tokio, Japón"><span class="discount">-20%</span></div><div class="card-body"><h3>Tokio, Japón</h3><p>Tecnología, tradición, gastronomía y barrios inolvidables.</p><p class="price"><span class="old-price">$3,500</span>$2,799</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+        <article class="card offer-item" data-category="playa"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85" alt="Maldivas"><span class="discount">-40%</span></div><div class="card-body"><h3>Maldivas</h3><p>Villas sobre el agua, arrecifes de coral y descanso total.</p><p class="price"><span class="old-price">$6,200</span>$3,720</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+        <article class="card offer-item" data-category="aventura"><div class="card-media"><img class="card-image" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85" alt="Patagonia, Argentina"><span class="discount">-30%</span></div><div class="card-body"><h3>Patagonia, Argentina</h3><p>Glaciares, montañas y naturaleza salvaje en una experiencia única.</p><p class="price"><span class="old-price">$2,800</span>$1,960</p><a class="btn" href="contactos.html">Reservar</a></div></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><div class="logo" style="margin-bottom:14px"><span class="logo-mark">TG</span><span>TravelGo</span></div><p>Tu agencia de viajes confiable. Diseñamos experiencias memorables para cada tipo de viajero.</p></div>
+    <div><h4>Enlaces rápidos</h4><ul class="footer-links"><li><a href="index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="ofertas.html">Promociones</a></li><li><a href="contactos.html">Contacto</a></li></ul></div>
+    <div><h4>Síguenos</h4><div class="socials"><a href="#">f</a><a href="#">◎</a><a href="#">𝕏</a><a href="#">▶</a></div></div>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 TravelGo. Proyecto académico - Sitio web de agencia de viajes.</div></div>
+</footer>
+<script src="app.js"></script>
+<script>
+const filterButtons=document.querySelectorAll('.filter-btn');
+const offers=document.querySelectorAll('.offer-item');
+filterButtons.forEach(button=>button.addEventListener('click',()=>{
+  filterButtons.forEach(item=>item.classList.remove('active'));
+  button.classList.add('active');
+  const filter=button.dataset.filter;
+  offers.forEach(offer=>{
+    const categories=offer.dataset.category.split(' ');
+    offer.classList.toggle('hidden',filter!=='todos'&&!categories.includes(filter));
+  });
+}));
+</script>
+</body>
+</html>
